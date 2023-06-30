@@ -1,0 +1,575 @@
+/* font colors
+    primary :: #4b5563
+    picture coloe:: #92e3a9
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* body {
+  background-color: antiquewhite;
+} */
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #92e3a9;
+}
+
+.nav a:hover {
+  background-color: #92e3a9;
+  color: #4b5563;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.container {
+  width: 80%;
+  margin: auto auto;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #94a3b8;
+  display: none;
+  /* color: #92e3a9; */
+  /* font-family: "Fasthand", cursive; */
+}
+
+.header {
+  /* background-color: #f9fafb; */
+  padding: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.929),
+    rgba(15, 15, 15, 0.955)
+  );
+  /* position: fixed; */
+  position: sticky;
+  top: -23px;
+}
+
+.nav {
+  display: flex;
+  margin-top: 20px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* flex-direction: row-reverse; */
+  /* position: sticky;
+  top: 100px; */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  text-decoration: none;
+}
+
+/* start of intro */
+
+.intro ul {
+  list-style: none;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.intro {
+  line-height: 120px;
+}
+
+.intro-section {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 5rem;
+  /* color: #94a3b8;
+  color: #e5e7eb; */
+  /* color: #4b5563; */
+  color: #92e3a9;
+}
+
+h4 {
+  font-size: 4rem;
+  /* color: aliceblue; */
+  color: #4b5563;
+}
+
+.intro-animation {
+  display: flex;
+}
+
+.intro-animation li {
+  font-size: 4rem;
+  position: relative;
+  top: 0;
+  animation: slide 4.5s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.intro-animation .dynamic-text {
+  margin-left: 15px;
+  height: 90px;
+  /* line-height: 80px; */
+  overflow: hidden;
+}
+
+.dynamic-text li span {
+  position: relative;
+  color: #92e3a9;
+}
+
+.dynamic-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 125%;
+  width: 100%;
+  background: rgba(23, 23, 23, 0.993);
+  border-left: 0.1rem solid #4b5563;
+  animation: typing 1.5s steps(9) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+.intro-section {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.929),
+    rgba(15, 15, 15, 0.955)
+  );
+  margin-bottom: 10px;
+}
+
+.hero {
+  height: 500px;
+  display: inline-block;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  transform: translateY(-60px);
+}
+
+/* this sectoion is for skills and logos */
+
+.logo {
+  height: 100px;
+  display: inline-block;
+}
+
+.logo-container {
+  padding: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /* background-color: #d0d0d0; */
+  box-shadow: 10px 5px 20px #d0d0d0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.logo-card:hover {
+  box-shadow: 10px 5px 20px #92e3a9;
+  padding: 12px;
+}
+
+.logo-p {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.skills {
+  background-color: #ffffff;
+  margin: 20px;
+}
+
+/* this section is for about me */
+
+.para {
+  text-align: justify;
+}
+
+h5 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #92e3a9;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.about {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.929),
+    rgba(15, 15, 15, 0.955)
+  );
+  padding: 4rem 0;
+  /* height: 100vh; */
+}
+
+.about p {
+  color: #94a3b8;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+/* .about p:hover {
+  box-shadow: 5px 5px 10px #92e3a9;
+} */
+
+.a-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.a-img {
+  display: inline-block;
+  height: 500px;
+}
+
+/* .a-img:hover {
+  box-shadow: 2px 20px 30px #92e3a9;
+} */
+
+/* this section is for events */
+
+.events {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.929),
+    rgba(15, 15, 15, 0.955)
+  );
+}
+
+.events-hearder {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  color: #92e3a9;
+  grid-column: 1 / -1;
+}
+
+.events-c {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.events-c p {
+  grid-column-start: 1;
+  /* text-align: right; */
+  color: #94a3b8;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.events-c img {
+  height: 25rem;
+  /* width: 25rem; */
+  border-radius: 10px;
+}
+
+/* this is event but for picture is in left */
+
+.events-cr {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 5rem;
+  margin-bottom: 5rem;
+  row-gap: 1.3rem;
+  padding: 3rem 0;
+}
+
+.events-hearderr {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  color: #92e3a9;
+  grid-column-start: 2;
+}
+
+.events-cr p {
+  text-align: justify;
+  line-height: 1.5rem;
+  color: #94a3b8;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.1rem;
+}
+
+.events-cr img {
+  height: 25rem;
+  /* width: 25rem; */
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* MAking website responsive  */
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    transform: translateY(-50px);
+  }
+
+  .nav-list a {
+    font-size: 0.8rem;
+  }
+
+  .intro-animation li {
+    font-size: 1.5rem;
+    transform: translateY(-50px);
+  }
+
+  .dynamic-text li span::after {
+    background: none;
+    border-left: none;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .logo {
+    height: 50px;
+    display: inline-block;
+  }
+
+  .logo-container {
+    padding: 45px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  /* this section is for about me */
+
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .about {
+    padding: 2rem 0;
+    /* height: 100vh; */
+  }
+
+  .about p {
+    line-height: 0.7rem;
+    font-size: 0.5rem;
+  }
+
+  .a-img {
+    height: 250px;
+  }
+
+  /* this section is for events */
+
+  .events-c {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .events-c img {
+    height: 9rem;
+  }
+
+  .events-c p {
+    line-height: 0.7rem;
+    font-size: 0.5rem;
+  }
+
+  .events-hearder {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .events-cr {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .events-cr img {
+    height: 9rem;
+  }
+  .events-cr p {
+    line-height: 0.7rem;
+    font-size: 0.5rem;
+  }
+
+  .events-hearderr {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 2rem;
+    transform: translateY(-45px);
+  }
+
+  .nav-list a {
+    font-size: 0.7rem;
+  }
+
+  .intro-container {
+    flex-direction: column;
+  }
+
+  .intro-animation li {
+    font-size: 2rem;
+    transform: translateY(-45px);
+  }
+
+  .dynamic-text li span::after {
+    background: none;
+    border-left: none;
+  }
+
+  .hero {
+    height: 320px;
+  }
+
+  .logo {
+    height: 25px;
+    display: inline-block;
+  }
+
+  .logo-p {
+    font-size: 0.5rem;
+  }
+
+  .logo-container {
+    padding: 50px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  /* this section is for about me */
+
+  h5 {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about {
+    padding: 2rem 0;
+    /* height: 100vh; */
+  }
+
+  .about p {
+    line-height: 0.7rem;
+    font-size: 0.3rem;
+  }
+
+  .a-img {
+    height: 250px;
+  }
+
+  /* this section is for events */
+
+  .events-c {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .events-c img {
+    height: 5rem;
+  }
+
+  .events-c p {
+    line-height: 0.7rem;
+    font-size: 0.3rem;
+  }
+
+  .events-hearder {
+    font-size: 0.5rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .events-cr {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .events-cr img {
+    height: 9rem;
+  }
+  .events-cr p {
+    line-height: 0.7rem;
+    font-size: 0.3rem;
+    transform: translateY(-20px);
+  }
+
+  .events-hearderr {
+    font-size: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+}

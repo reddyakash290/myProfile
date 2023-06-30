@@ -477,11 +477,13 @@ h5 {
   }
 
   .nav-list a {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    color: #a7b4c7;
   }
 
   .intro-container {
     flex-direction: column;
+    transform: translateY(15px);
   }
 
   .intro-animation li {
@@ -527,7 +529,7 @@ h5 {
   }
 
   .about p {
-    line-height: 0.7rem;
+    line-height: 0.5rem;
     font-size: 0.3rem;
   }
 
@@ -539,6 +541,7 @@ h5 {
 
   .events-c {
     grid-template-columns: 2fr 1fr;
+    margin-bottom: 0.5rem;
   }
 
   .events-c img {
@@ -557,10 +560,11 @@ h5 {
 
   .events-cr {
     grid-template-columns: 1fr 2fr;
+    margin-bottom: 0.5rem;
   }
 
   .events-cr img {
-    height: 9rem;
+    height: 5rem;
   }
   .events-cr p {
     line-height: 0.7rem;

@@ -236,7 +236,7 @@ h5 {
 
 .about {
   background-image: linear-gradient(
-    to 45deg,
+    45deg,
     rgba(0, 0, 0, 0.929),
     rgba(15, 15, 15, 0.955)
   );
@@ -276,7 +276,7 @@ h5 {
 
 .events {
   background-image: linear-gradient(
-    to 45deg,
+    45deg,
     rgba(0, 0, 0, 0.929),
     rgba(15, 15, 15, 0.955)
   );

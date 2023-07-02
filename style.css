@@ -11,6 +11,10 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* body {
   background-color: antiquewhite;
 } */
@@ -92,7 +96,7 @@ h3 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   /* color: #94a3b8;
   color: #e5e7eb; */
   /* color: #4b5563; */
@@ -100,7 +104,7 @@ h2 {
 }
 
 h4 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   /* color: aliceblue; */
   color: #4b5563;
 }
@@ -310,7 +314,36 @@ h5 {
 }
 
 .events-c img {
-  height: 25rem;
+  height: 20rem;
+  /* width: 25rem; */
+  border-radius: 10px;
+}
+
+/* this is for events hidden picture right */
+
+.events-ch {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 5rem;
+  /* margin-bottom: 1rem; */
+  display: none;
+  padding-bottom: 5rem;
+}
+
+.events-ch p {
+  grid-column-start: 1;
+  /* text-align: right; */
+  color: #94a3b8;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.events-ch img {
+  height: 20rem;
   /* width: 25rem; */
   border-radius: 10px;
 }
@@ -321,7 +354,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   column-gap: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   row-gap: 1.3rem;
   padding: 3rem 0;
 }
@@ -345,10 +378,32 @@ h5 {
 }
 
 .events-cr img {
-  height: 25rem;
+  height: 20rem;
   /* width: 25rem; */
   border-radius: 10px;
   display: inline-block;
+}
+
+.events-btn {
+  padding: 10px 1px;
+  width: 10rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* margin-bottom: 5rem; */
+  position: relative;
+  top: -2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #92e3a9;
+  cursor: pointer;
+}
+
+.events-btn:hover {
+  box-shadow: 1px 1px 10px #ffffff;
+  background-color: #000;
+  color: #92e3a9;
 }
 
 /* MAking website responsive  */
@@ -582,5 +637,32 @@ h5 {
     font-size: 0.7rem;
     margin-bottom: 0rem;
     padding-bottom: 0;
+  }
+
+  /* for hidden events */
+
+  .events-ch {
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 0.5rem;
+    column-gap: 1rem;
+  }
+
+  .events-ch img {
+    height: 10rem;
+  }
+
+  .events-ch p {
+    line-height: 0.7rem;
+    font-size: 0.3rem;
+    text-align: left;
+    /* transform: translateY(-10px); */
+  }
+
+  .events-btn {
+    margin-top: 3rem;
+    padding: 2px;
+    width: 2rem;
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
